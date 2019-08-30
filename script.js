@@ -26,8 +26,7 @@ const RIGHT = document.getElementById('js-right');
 // Initialize state
 function init() {
   let initModel = {
-    // quote: QUOTES[currentQuote].split(' '),
-    quote: 'yes we are'.split(' '),
+    quote: QUOTES[currentQuote].split(' '),
     index: 0,
     charIndex: 0,
     isOn: false,
@@ -38,7 +37,8 @@ function init() {
     timer: undefined,
     charactersTyped: 0,
     secondsTyped: 0,
-    wordsPerMinute: 0
+    wordsPerMinute: 0,
+    firstOn: true
   };
   initModel.quote = initModel.quote.map((item, index) => {
     if (index < initModel.quote.length - 1) return item + ' ';
@@ -137,10 +137,10 @@ function handleKeys(event) {
   }
 
   // enter
-  if (k === 13 && !model.isOn) {
+  if (k === 13 && !model.isOn && !model.firstOn) {
     view('quote');
     init();
-  } else if (k === 13 && model.isOn) {
+  } else if (k === 13) {
     INPUT.focus();
   }
 
@@ -230,7 +230,8 @@ function reset() {
     timer: undefined,
     charactersTyped: 0,
     secondsTyped: 0,
-    wordsPerMinute: 0
+    wordsPerMinute: 0,
+    firstOn: true
   };
   initModel.quote = initModel.quote.map((item, index) => {
     if (index < initModel.quote.length - 1) return item + ' ';
