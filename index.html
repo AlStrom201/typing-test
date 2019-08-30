@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="c-quote center">
+          <span id="js-left" class="quote-left js-quote"> </span>
+          <span id="js-middle" class="quote-middle js-quote"></span>
+          <span id="js-right" class="quote-right js-quote"> </span>
+          <div id="js-hide" class="to-hide">
+            <h1 class="quote-intro">Typing Test</h1>
+            <div class="">
+              <h2 class="quote-tip1">Press Enter To Start.</h2>
+              <h3 class="quote-tip2">
+                Press <span>Esc</span> to skip a quote.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="c-input center">
+          <input
+            id="js-input"
+            type="text"
+            class="input"
+            autofocus
+            onselectstart="return false;"
+            onmousedown="return false;"
+          />
+        </div>
+        <h1 id="js-wpm" class="wpm center">Words Per Minute:</h1>
+        <section class="success center" id="js-success">
+          <h1 class="final-wpm-title">Final WPM</h1>
+          <h1 id="js-final-wpm" class="final-wpm">64</h1>
+          <button class="try-again-btn" id="js-try-again">Try Again?</button>
+          <h2 class="quote-tip2">Or press <span>Esc</span> to reset.</h2>
+        </section>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.center {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+}
+
+.c-quote {
+  border: 1px solid gray;
+  min-height: 13rem;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 24px;
+  line-height: 1.8rem;
+  margin: 1rem;
+}
+
+.to-hide {
+  height: 13rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.quote-intro {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.quote-tip1 {
+  font-weight: 300;
+}
+
+.quote-tip2 {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.quote-tip2 span {
+  background: black;
+  color: white;
+  font-weight: 700;
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+}
+
+.quote-left {
+  color: gray;
+}
+
+.quote-middle {
+  background: #8af08a;
+}
+
+.c-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.input {
+  text-align: center;
+  width: 15rem;
+  height: 1.5rem;
+  font-size: 24px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+
+.wpm {
+  margin: 1rem;
+}
+
+.correct-letter {
+  color: whitesmoke;
+}
+
+.wrong-letter {
+  background: red;
+  color: whitesmoke;
+}
+
+.space-lettter {
+  background: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: block;
+  }
+}
+
+.success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.final-wpm-title {
+  text-align: center;
+  font-size: 32px;
+}
+
+.final-wpm {
+  text-align: center;
+  font-size: 57px;
+  color: green;
+  margin: 0;
+}
+
+.try-again-btn {
+  border: 0;
+  outline: 0;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 24px;
+  cursor: pointer;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.try-again-btn:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+/*# sourceMappingURL=style.css.map */
