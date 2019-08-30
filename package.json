@@ -1,0 +1,19 @@
+{
+  "name": "typing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "normalize": "^0.3.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d dist",
+    "sass": "sass --watch css/main.scss:style.css"
+  },
+  "author": "AlStrom201",
+  "license": "ISC"
+}

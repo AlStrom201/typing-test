@@ -1,0 +1,94 @@
+.container {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.c-quote {
+  border: 1px solid gray;
+  min-height: 13rem;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 24px;
+  line-height: 1.8rem;
+  margin: 1rem;
+}
+
+.to-hide {
+  height: 13rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.quote-intro {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.quote-tip1 {
+  font-weight: 300;
+}
+
+.quote-tip2 {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+
+  span {
+    background: black;
+    color: white;
+    font-weight: 700;
+    padding: 0 0.5rem;
+    border-radius: 1rem;
+  }
+}
+
+.quote-left {
+  color: gray;
+}
+
+.quote-middle {
+  background: rgb(138, 240, 138);
+}
+
+.c-input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.input {
+  text-align: center;
+  width: 15rem;
+  height: 1.5rem;
+  font-size: 24px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+
+.wpm {
+  margin: 1rem;
+}
+
+.correct-letter {
+  color: whitesmoke;
+}
+
+.wrong-letter {
+  background: red;
+  color: whitesmoke;
+}
+
+.space-lettter {
+  background: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: block;
+  }
+}
