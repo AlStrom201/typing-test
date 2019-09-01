@@ -2,6 +2,29 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100vh;
+}
+
+.copyright {
+  padding: 0.5rem 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 1s all ease-in-out;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.copyright:hover {
+  a {
+    text-decoration: underline;
+    color: blue;
+    font-size: 22px;
+  }
 }
 
 .center {
